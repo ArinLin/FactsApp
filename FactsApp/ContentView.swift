@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            FirstScreen()
+                .tabItem {
+                    Label("Сохранение", systemImage: "doc.text.fill")
+                }
+            
+            SecondScreen()
+                .tabItem {
+                    Label("API", systemImage: "arrow.down.doc.fill")
+                }
+            
+            ThirdScreen()
+                .tabItem {
+                    Label("Перейти", systemImage: "arrow.right.circle.fill")
+                }
         }
-        .padding()
     }
 }
 
