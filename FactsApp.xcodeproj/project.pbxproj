@@ -16,6 +16,8 @@
 		8465F35C2AA9C0B30077996D /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F35B2AA9C0B30077996D /* ThirdScreen.swift */; };
 		8465F35E2AA9C0E10077996D /* FourthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F35D2AA9C0E10077996D /* FourthScreen.swift */; };
 		8465F3602AA9C1020077996D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F35F2AA9C1020077996D /* WebView.swift */; };
+		8465F3642AA9C8C90077996D /* SecondScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F3632AA9C8C90077996D /* SecondScreenVM.swift */; };
+		8465F3672AA9D2DC0077996D /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F3662AA9D2DC0077996D /* Fact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		8465F35B2AA9C0B30077996D /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 		8465F35D2AA9C0E10077996D /* FourthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreen.swift; sourceTree = "<group>"; };
 		8465F35F2AA9C1020077996D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		8465F3632AA9C8C90077996D /* SecondScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVM.swift; sourceTree = "<group>"; };
+		8465F3662AA9D2DC0077996D /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +67,9 @@
 			children = (
 				844C2A1D2AA9B9F80099726C /* FactsAppApp.swift */,
 				844C2A1F2AA9B9F80099726C /* ContentView.swift */,
-				8465F3572AA9C00C0077996D /* FirstScreen.swift */,
-				8465F3592AA9C08D0077996D /* SecondScreen.swift */,
-				8465F35B2AA9C0B30077996D /* ThirdScreen.swift */,
-				8465F35D2AA9C0E10077996D /* FourthScreen.swift */,
+				8465F3652AA9D2CE0077996D /* Model */,
+				8465F3622AA9C8B30077996D /* ViewModel */,
+				8465F3612AA9C8AA0077996D /* View */,
 				8465F35F2AA9C1020077996D /* WebView.swift */,
 				844C2A212AA9B9FA0099726C /* Assets.xcassets */,
 				844C2A232AA9B9FA0099726C /* Preview Content */,
@@ -80,6 +83,33 @@
 				844C2A242AA9B9FA0099726C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8465F3612AA9C8AA0077996D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8465F3572AA9C00C0077996D /* FirstScreen.swift */,
+				8465F3592AA9C08D0077996D /* SecondScreen.swift */,
+				8465F35B2AA9C0B30077996D /* ThirdScreen.swift */,
+				8465F35D2AA9C0E10077996D /* FourthScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8465F3622AA9C8B30077996D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8465F3632AA9C8C90077996D /* SecondScreenVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8465F3652AA9D2CE0077996D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8465F3662AA9D2DC0077996D /* Fact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +186,10 @@
 				8465F35E2AA9C0E10077996D /* FourthScreen.swift in Sources */,
 				8465F35A2AA9C08D0077996D /* SecondScreen.swift in Sources */,
 				8465F35C2AA9C0B30077996D /* ThirdScreen.swift in Sources */,
+				8465F3672AA9D2DC0077996D /* Fact.swift in Sources */,
 				844C2A1E2AA9B9F80099726C /* FactsAppApp.swift in Sources */,
 				8465F3582AA9C00C0077996D /* FirstScreen.swift in Sources */,
+				8465F3642AA9C8C90077996D /* SecondScreenVM.swift in Sources */,
 				8465F3602AA9C1020077996D /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
