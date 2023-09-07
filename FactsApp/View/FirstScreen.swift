@@ -9,17 +9,19 @@ import SwiftUI
 
 struct FirstScreen: View {
     @ObservedObject var viewModel = FirstScreenVM()
-
+    
     var body: some View {
         VStack {
             TextField("Введите данные", text: $viewModel.inputText)
                 .padding()
+                .frame(maxWidth: .infinity) 
 
             Button(action: {
                 viewModel.saveData()
             }) {
                 Text("Сохранить")
             }
+            .padding()
 
             List(viewModel.savedData, id: \.self) { data in
                 Text(data)

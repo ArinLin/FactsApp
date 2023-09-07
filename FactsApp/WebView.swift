@@ -58,7 +58,6 @@ struct WebView: UIViewRepresentable {
                 webView.goForward()
             }
         }
-        // Добавить обработчики навигации, если нужно
     }
 }
 

@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct FactsAppApp: App {
     @AppStorage("isFirstLaunch") var isFirstLaunch: Bool = true
+    @AppStorage("ShowFourthScreen") var showFourthScreen = false 
     @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
@@ -21,8 +22,10 @@ struct FactsAppApp: App {
                             isFirstLaunch = false
                         }
                     }
-            } else {
+            } else if showFourthScreen {
                 FourthScreen()
+            } else {
+                ContentView()
             }
         }
     }
