@@ -8,25 +8,20 @@
 import SwiftUI
 
 struct FirstScreen: View {
-    @State private var inputText = ""
-    @State private var savedData: [String] = UserDefaults.standard.stringArray(forKey: "SavedData") ?? []
-    
+    @ObservedObject var viewModel = FirstScreenVM()
+
     var body: some View {
         VStack {
-            TextField("Введите данные", text: $inputText)
+            TextField("Введите данные", text: $viewModel.inputText)
                 .padding()
-            
+
             Button(action: {
-                if !inputText.isEmpty {
-                    savedData.append(inputText)
-                    UserDefaults.standard.set(savedData, forKey: "SavedData")
-                    inputText = ""
-                }
+                viewModel.saveData()
             }) {
                 Text("Сохранить")
             }
-            
-            List(savedData, id: \.self) { data in
+
+            List(viewModel.savedData, id: \.self) { data in
                 Text(data)
             }
         }

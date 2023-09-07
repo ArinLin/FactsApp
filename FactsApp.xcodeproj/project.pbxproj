@@ -18,6 +18,7 @@
 		8465F3602AA9C1020077996D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F35F2AA9C1020077996D /* WebView.swift */; };
 		8465F3642AA9C8C90077996D /* SecondScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F3632AA9C8C90077996D /* SecondScreenVM.swift */; };
 		8465F3672AA9D2DC0077996D /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F3662AA9D2DC0077996D /* Fact.swift */; };
+		8465F3692AA9DC9B0077996D /* FirstScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465F3682AA9DC9B0077996D /* FirstScreenVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		8465F35F2AA9C1020077996D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		8465F3632AA9C8C90077996D /* SecondScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVM.swift; sourceTree = "<group>"; };
 		8465F3662AA9D2DC0077996D /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		8465F3682AA9DC9B0077996D /* FirstScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				8465F3632AA9C8C90077996D /* SecondScreenVM.swift */,
+				8465F3682AA9DC9B0077996D /* FirstScreenVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				8465F35A2AA9C08D0077996D /* SecondScreen.swift in Sources */,
 				8465F35C2AA9C0B30077996D /* ThirdScreen.swift in Sources */,
 				8465F3672AA9D2DC0077996D /* Fact.swift in Sources */,
+				8465F3692AA9DC9B0077996D /* FirstScreenVM.swift in Sources */,
 				844C2A1E2AA9B9F80099726C /* FactsAppApp.swift in Sources */,
 				8465F3582AA9C00C0077996D /* FirstScreen.swift in Sources */,
 				8465F3642AA9C8C90077996D /* SecondScreenVM.swift in Sources */,
